@@ -4,21 +4,15 @@ import PropTypes from 'prop-types';
 const NotFoundPage = ({ staticContext = {} }) => {
 	staticContext.notFound = true;
 	return (
-		<div className="ui container">
-			<h1>Page Not Found!!!</h1>
-			<p>Please try again!</p>
+		<div className="container">
+			<div className="row justify-content-center flex-column">
+				<h1>Page Not Found!!!</h1>
+				<p>Please try again!</p>
+			</div>
 		</div>
 	);
 };
 
-NotFoundPage.propTypes = {
-	staticContext: PropTypes.objectOf(PropTypes.any),
-};
-
-NotFoundPage.defaultProps = {
-	staticContext: {},
-};
-
 export default {
-	component: NotFoundPage,
+	component: NotFoundPage
 };
