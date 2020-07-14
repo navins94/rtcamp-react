@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	baseURL: 'https://ilaakainfo.com/'
+	baseURL: 'https://gharinfo.com/'
 });
 
 export default api;
